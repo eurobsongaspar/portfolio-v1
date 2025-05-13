@@ -1,0 +1,84 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:"border-box";
+}
+
+body {
+  background-color: #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
+  background-color: #111;
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* TOPO DA PÁGINA - LOGO E MENÚ */
+
+header{
+  /* Flex, alinha logo e nav na horizontal*/
+  display: flex; 
+  /*Um à esquerda, outro à direita*/
+  justify-content: space-between;
+  /*Alinha verticalmente*/
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nome{
+  color: #00bfa6;
+}
+
+.sobrenome{
+  color: #fff;
+}
+
+nav ul{
+  display: flex; /*Menú horizontal*/
+  gap: 20px; /*Espaço entre as li*/
+  list-style: none;
+  background-color:#000;
+  padding: 20px;
+  border-right: 4px solid #00bfa6;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover{
+  color: #00bfa6;
+}
+
+/*HERO*/
+
+.hero{ 
+  text-align: center;
+  padding: 4rem 1rem;
+}
+img  {
+  width: 150px;
+  height:150px;
+  border-radius:50%;
+  background-color:#fff;
+  display: block;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fff;
+}
