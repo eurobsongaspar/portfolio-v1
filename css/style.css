@@ -1,7 +1,7 @@
 *{
   padding:0;
   margin:0;
-  box-sizing:"border-box";
+  box-sizing:border-box;
 }
 
 body {
@@ -18,7 +18,7 @@ main{
 
 /* TOPO DA PÁGINA - LOGO E MENÚ */
 
-header{
+header {
   /* Flex, alinha logo e nav na horizontal*/
   display: flex; 
   /*Um à esquerda, outro à direita*/
@@ -61,24 +61,95 @@ nav a:hover{
 
 /*HERO*/
 
-.hero{ 
-  text-align: center;
+.hero{
+  width: 800px;
+  margin: 0 auto;
   padding: 4rem 1rem;
+  display: flex; /* Faz com que todos os elementos dentro da section .hero fiquem lado a lado */
+  align-items: center; /* Foto e texto alinhados no centro */
+  gap: 2rem; /* espaçamento entre a foto e o texto */
+}
+
+.foto-perfil{
+  width: 150px;
+  flex-shrink: 0; /* Evita a imagem encolher */
 }
 img  {
-  width: 150px;
-  height:150px;
+  width: 100%;
   border-radius:50%;
   background-color:#fff;
-  display: block;
+  border: 4px solid #fff;
+  
 }
-.hero h1 {
+
+.texto-hero {
+  flex: 1; /* Faz o texto ocupar o resto do espaço */
+}
+
+.texto-hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #fff;
+  border-left: 4px solid #00bfa6;
+  padding-left:20px;
 }
 
-.hero p {
+.texto-hero p {
   font-size: 1.2rem;
   color: #fff;
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    border-right: none;
+    border-left: 4px solid #00bfa6;
+    background-color: #000;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .foto-perfil {
+    margin: 0 auto;
+  }
+
+  .texto-hero {
+    flex: unset;
+  }
+
+  .texto-hero h1 {
+    font-size: 2rem;
+    padding-left: 10px;
+    border-left-width: 3px;
+  }
+
+  .texto-hero p {
+    font-size: 1rem;
+  }
 }
