@@ -82,25 +82,30 @@ nav a:hover {
   border-radius: 50%;
   background-color: #fff;
   border: 4px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 191, 166, 0.5);
 }
 
 /* Texto */
-.texto-hero {
-  flex: 1;
-  min-width: 250px;
+
+.subtitulo{
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom:10px;
 }
 
 .texto-hero h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #fff;
-  border-left: 4px solid #00bfa6;
   padding-left: 20px;
-  margin-bottom: 10px;
+  border:0;
 }
 
-.texto-hero p {
+.texto-hero {
   font-size: 1.2rem;
   color: #fff;
   line-height: 1.6;
 }
+
 }
