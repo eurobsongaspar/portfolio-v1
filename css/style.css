@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap:wrap
+  flex-wrap:wrap;
   gap: 1rem;
   margin-bottom: 40px;
 }
@@ -50,21 +50,21 @@ nav ul {
 }
 nav ul li{
  background-color: #000;
- padding: 10px 20px;
-}
-
-nav ul li:hover{
- background-color: #00bfa6;
- padding: 10px 20px;
+ 
 }
 
 nav a {
-  color: #fff;
+  display: block;
+  padding: 10px 20px;
+ color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
+  background-color: #00bfa6;
   color: #111;
+  text-shadow: 0 0 5px #00e6b8;
 }
 
 /* HERO SECTION */
