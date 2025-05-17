@@ -1,23 +1,34 @@
-/* Reset básico */
+
+/* Reset */
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Corrigido: sem aspas! */
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+h1, h2 .logo {
+  font-family: 'Orbitron', sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #111;
 }
 
 /* Container principal */
+
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* TOPO: Logo + Menú */
+/* TOPO: Logo */
 
 header {
   display: flex;
@@ -28,19 +39,26 @@ header {
   margin-bottom: 40px;
 }
 
-
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
   white-space: nowrap;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
 }
 
-.nome {
+.logo a{
+  color:#fff; 
+  text-decoration: none;
+}
+.inicial {
   color: #00bfa6;
 }
 
-.sobrenome {
-  color: #fff;
+/* Menú */
+
+nav {
+  font-size: 1.3rem;
 }
 
 nav ul {
@@ -48,15 +66,16 @@ nav ul {
   list-style: none;
   border-right: 4px solid #00bfa6;
 }
+
 nav ul li{
  background-color: #000;
- 
+
 }
 
 nav a {
   display: block;
   padding: 10px 20px;
- color: #fff;
+  color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -67,20 +86,22 @@ nav a:hover {
   text-shadow: 0 0 5px #00e6b8;
 }
 
-/* HERO SECTION */
+/* Section Hero */
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Quebra a imagem e texto para mobile */
+  flex-wrap: wrap; /*Quebra a imagem e texto para mobile*/
   gap: 2rem;
   padding: 4rem 1rem;
 }
 
-/* Foto */
+/* Foto do perfil */
+
 .foto-perfil {
   width: 150px;
-  flex-shrink: 0; /* Impede encolhimento da imagem */
+  flex-shrink: 0; /*Impede encolhimento da imagem*/
 }
 
 .foto-perfil img {
@@ -91,29 +112,30 @@ nav a:hover {
   box-shadow: 0 4px 15px rgba(0, 191, 166, 0.5);
 }
 
-/* Texto */
+/* Texto Hero*/
+
 .texto-hero {
   flex: 1;
   min-width: 250px;
 }
 
 .texto-hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #fff;
   border-left: 4px solid #00bfa6;
   padding-left: 20px;
   margin-bottom: 10px;
 }
 
-.subtitulo{
-  font-size: 1rem;
+.subtitulo {
+  font-size: 1.5rem;
   color: #ccc;
   line-height: 1.6;
   font-style: italic;
-  margin-bottom:10px;
+  margin-bottom:20px;
 }
-.texto-hero{
-  font-size: 1.2rem;
+.texto-hero {
+  font-size: 1.3rem;
   color: #fff;
-  line-height: 1.6;
+  line-height: 1.5;
 }

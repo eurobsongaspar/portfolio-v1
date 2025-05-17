@@ -1,4 +1,5 @@
-/* RESPONSIVO - Ajuste em telas pequenas */
+/*Smartphones*/
+
 @media (max-width: 768px) {
 
 body, html, main, header, nav {
@@ -11,14 +12,13 @@ main {
 padding-top: 40px;
 }
 
-/* TOPO DA PÁGINA - LOGO E MENÚ */
+/*Topo + Logo*/
 
 header {
   width:100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  
 }
 
 .logo {
@@ -28,8 +28,9 @@ header {
   text-align: center;
 }
 
-.nome { color: #00bfa6; }
-.sobrenome { color: #fff;}
+.sobrenome { color:#00e6b8;}
+
+/* Menú */
 
 nav {
   width: 100%;
@@ -61,7 +62,7 @@ nav a:hover {
   text-shadow: 0 0 5px #00e6b8;
 }
 
-/* Hero */
+/* Section Hero */
 
 .hero {
   padding: 40px 20px;
@@ -69,7 +70,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* Foto */
+/* Foto do perfil */
 
 .foto-perfil {
   width: 150px;
@@ -85,10 +86,10 @@ nav a:hover {
   box-shadow: 0 4px 15px rgba(0, 191, 166, 0.5);
 }
 
-/* Texto */
+/* Texto Hero*/
 
 .subtitulo{
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ccc;
   line-height: 1.6;
   font-style: italic;
