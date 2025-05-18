@@ -1,0 +1,60 @@
+/* 1. Reset geral e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Facilita o uso de rem (1rem = 10px) */
+html {
+    font-size: 62.5%;
+    /* 62.5% de 16px = 10px */
+    scroll-behavior: smooth;
+    /* Rolagem suave nos links */
+}
+
+/* 3. Corpo do site */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    /* 15px */
+    background-color: #111;
+    color: #f6f6f6;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* 4. Elementos padrão */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}
+
+/* 5. Imagens responsivas */
+img {
+    max-width: 100%;
+    display: block;
+}
