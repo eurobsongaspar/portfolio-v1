@@ -1,30 +1,27 @@
 /* Container principal */
-
 main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
+  max-width: 1200px; /* Limita a largura do conteúdo pra não ficar esticado em telas muito grandes */
+  margin: 0 auto; /* Centraliza o conteúdo na horizontal */
+  padding: 4rem 2rem; /* Espaçamento interno (topo/baixo 4rem, lados 2rem) */
 }
 
 /* TOPO: Logo */
-
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 4rem;
+  display: flex; /* Usa Flexbox pra alinhar os filhos (logo + menu) lado a lado */
+  justify-content: space-between; /* Coloca logo de um lado e menu do outro */
+  align-items: center; /* Alinha verticalmente no centro */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha no mobile */
+  gap: 1rem; /* Espaço entre logo e menu quando quebra linha */
+  margin-bottom: 4rem; /* Espaço entre o header e a próxima seção */
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.4rem; 
   font-weight: bold;
-  white-space: nowrap;
+  white-space: nowrap; /* Impede quebra de linha no texto do logo*/
   font-family: 'Orbitron', sans-serif;
-  color: #f6f6f6;
+  color: #f6f6f6; 
 }
-
 .logo a {
   color: #f6f6f6;
   text-decoration: none;
@@ -35,69 +32,61 @@ header {
 }
 
 /* Menú */
-
 nav {
-  font-size: 1.5rem;
+  font-size: 1.6rem; /* Tamanho base dos links do menu */
 }
 
 nav ul {
-  display: flex;
-  list-style: none;
-  border-right: 0.5rem solid #00bfa6;
+  display: flex; /* Deixa os itens do menu lado a lado */
+  list-style: none; /* Remove bolinhas dos <li> */
+  border-right: 0.5rem solid #00bfa6; 
 }
 
 nav ul li {
-  background-color: #000;
-
+  background-color: #000; 
 }
 
 nav a {
-  display: block;
-  padding: 1rem 2rem;
+  display: block; /* Permite que padding funcione corretamente ocupando o espaço todo do <a> */
+  padding: 1rem 2rem; /* Espaço interno nos links (mais clicável) */
   color: #f6f6f6;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  text-decoration: none; 
+  transition: all 0.3s ease; /* Animações suaves no hover */
 }
 
 nav a:hover {
   background-color: #00bfa6;
   color: #111;
-  text-shadow: 0 0 0.5rem #00e6b8;
+  text-shadow: 0 0 0.5rem #00e6b8; /* Efeito de brilho no texto */
 }
 
 /* Section Hero */
-
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  /*Quebra a imagem e texto para mobile*/
-  gap: 2rem;
-  padding: 4rem 1rem;
+  display: flex; /* Layout em linha (imagem + texto) */
+  align-items: center; /* Alinha verticalmente no centro */
+  justify-content: center; /* Centraliza horizontalmente */
+  flex-wrap: wrap; /* Permite que quebre em duas linhas no mobile */
+  gap: 2rem; /* Espaço entre a imagem e o texto */
+  padding: 4rem 1rem; /* Espaçamento interno da seção */
 }
 
 /* Foto do perfil */
-
 .foto-perfil {
-  width: 150px;
-  flex-shrink: 0;
-  /*Impede encolhimento da imagem*/
+  width: 150px; /* Tamanho fixo da foto */
+  flex-shrink: 0; /* Impede que a imagem encolha quando a tela for pequena */
 }
 
 .foto-perfil img {
-  width: 100%;
-  border-radius: 50%;
-  background-color: #f6f6f6;
-  border: 4px solid #f6f6f6;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 191, 166, 0.5);
+  width: 100%; /* Faz a imagem ocupar toda a largura da div */
+  border-radius: 50%; /* Deixa a imagem redonda */
+  border: 4px solid #f6f6f6; 
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 191, 166, 0.5); /* Sombra com cor do destaque */
 }
 
-/* Texto Hero*/
-
+/* Texto Hero */
 .texto-hero {
-  flex: 1;
-  min-width: 250px;
+  flex: 1; /* Ocupa todo o espaço restante ao lado da imagem */
+  min-width: 250px; /* Evita que fique muito estreito */
 }
 
 .texto-hero h1 {
@@ -110,10 +99,10 @@ nav a:hover {
 }
 
 .subtitulo {
-  font-size: 1.5rem;
-  color: #ccc;
+  font-size: 1.8rem;
+  color: #ccc; 
   line-height: 1.5;
-  font-style: italic;
+  font-style: italic; 
   margin-bottom: 2rem;
 }
 
@@ -121,18 +110,46 @@ nav a:hover {
   color: #f6f6f6;
 }
 
-/* Section Skills */
+/* Social - Conecte-se comigo */
+.social {
+  flex-basis: 100%; /* Força a social ocupar linha inteira */
+  display: flex; /* Flexbox para alinhar os ícones */
+  justify-content: left; /* Alinha os ícones à esquerda */
+  margin-top: 2rem; /* Espaço acima da seção social */
+}
 
+.social ul {
+  list-style: none;
+  display: flex; /* Alinha os <li> na horizontal */
+  gap: 1rem; /* Espaçamento entre os ícones */
+  justify-content: left; /* Alinha à esquerda */
+  margin-top: 1rem; /* Espaço entre o texto e os ícones */
+}
+
+.social i {
+  font-size: 2rem; /* Tamanho dos ícones */
+  color: #444;
+}
+
+.social a:hover i {
+  color: #00bfa6;
+  transition: all 0.3s ease;
+}
+
+/* Section Skills */
 .skills {
-  padding: 4rem 2rem;
-  background-color: #1e1e1e;
+  padding: 4rem 2rem; /* Espaçamento interno */
+  background-color: #1e1e1e; /* Fundo escuro da seção */
+  border-radius: 5rem 0;
 }
 
 .skills h2 {
-  font-family: 'Orbitron', sans-serif;
-  color: #f6f6f6;
-  font-size: 2rem;
-  color: #f6f6f6;
-  margin-bottom: 2rem;
-
+  font-family: 'Orbitron', sans-serif; /* Mesma fonte futurista */
+  color: #f6f6f6; /* Cor clara do título */
+  font-size: 2rem; /* Tamanho do título */
+  margin-bottom: 2rem; /* Espaço abaixo do título */
+}
+.destaque{
+   color:#00bfa6;
+   font-weight: bold;
 }

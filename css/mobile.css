@@ -1,7 +1,7 @@
-/*Smartphones*/
-
+/* Estilos para smartphones com largura até 768px */
 @media (max-width: 768px) {
 
+  /* Zera margens e paddings em todos os principais elementos e força largura 100% */
   body,
   html,
   main,
@@ -12,12 +12,12 @@
     width: 100%;
   }
 
+  /* Adiciona espaçamento no topo do conteúdo principal */
   main {
     padding-top: 40px;
   }
 
-  /*Topo + Logo*/
-
+  /* Topo com logo e menu em coluna (um embaixo do outro) */
   header {
     width: 100%;
     display: flex;
@@ -25,93 +25,120 @@
     overflow: hidden;
   }
 
+  /* Estilo da logo: centralizada, maior e com espaçamento */
   .logo {
-    font-size: 2rem;
+    font-size: 2.6rem;
+    /* Aumentado para melhor leitura */
     font-weight: bold;
     margin-bottom: 4rem;
     text-align: center;
   }
 
+  /* Cor do sobrenome dentro da logo */
   .sobrenome {
     color: #00e6b8;
   }
 
-  /* Menú */
-
+  /* Menu ocupa toda a largura */
   nav {
     width: 100%;
   }
 
+  /* Lista do menu: em coluna, centralizada, sem borda lateral */
   nav ul {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    /* Espaçamento entre os <li> */
+    /* Espaço entre os itens */
     list-style: none;
     text-align: center;
     border: 0;
   }
 
+  /* Cada item do menu com fundo preto */
   nav li {
     background-color: #000;
   }
 
+  /* Links do menu com espaçamento maior e transição suave */
   nav a {
     color: #f6f6f6;
     text-decoration: none;
     padding: 2rem;
     transition: all 0.3s ease;
+    font-size: 1.6rem;
+    /* Aumentado para facilitar o toque no celular */
   }
 
+  /* Efeito hover nos links */
   nav a:hover {
     color: #111;
     text-shadow: 0 0 0.5rem #00e6b8;
   }
 
-  /* Section Hero */
-
+  /* Seção Hero com centralização e espaçamento interno */
   .hero {
     padding: 4rem 2rem;
     color: #f6f6f6;
     text-align: center;
   }
 
-  /* Foto do perfil */
-
+  /* Imagem de perfil centralizada e com tamanho fixo */
   .foto-perfil {
     width: 150px;
     flex-shrink: 0;
-    /* Impede encolhimento da imagem */
+    /* Impede a imagem de encolher */
     margin: 0 auto;
+    /* Centraliza */
   }
 
   .foto-perfil img {
     width: 100%;
     border-radius: 50%;
+    /* Deixa redonda */
     background-color: #f6f6f6;
     border: 0.5rem solid #f6f6f6;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 191, 166, 0.5);
   }
 
-  /* Texto Hero*/
-
+  /* Subtítulo abaixo do nome */
   .subtitulo {
     color: #ccc;
     font-style: italic;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
   .texto-hero h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #f6f6f6;
     padding-left: 20px;
     border: 0;
   }
 
+  /* Cor do texto */
   .texto-hero {
     color: #f6f6f6;
+  }
+
+  /* Section Skills */
+  .skills {
+    width: 100%;
+    padding: 4rem 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 5rem 0;
+
+  }
+
+  /* Social: centraliza os ícones no mobile */
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
   }
 
 }
