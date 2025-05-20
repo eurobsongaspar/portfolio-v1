@@ -125,13 +125,12 @@
 
   /* Section Skills */
   .skills {
-    width: 100%;
+    max-width: 100%;
     padding: 4rem 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin:0 2rem;
     background-color: #1e1e1e;
     border-radius: 5rem 0;
-
+    overflow: hidden;
   }
 
   /* Social: centraliza os ícones no mobile */
