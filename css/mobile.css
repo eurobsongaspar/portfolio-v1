@@ -127,10 +127,14 @@
   .skills {
     max-width: 100%;
     padding: 4rem 2rem;
-    margin:0 2rem;
+    margin: 0 2rem;
     background-color: #1e1e1e;
     border-radius: 5rem 0;
     overflow: hidden;
+  }
+
+  .skills h2 {
+    text-align: center;
   }
 
   /* Social: centraliza os ícones no mobile */
@@ -138,6 +142,21 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+  }
+
+  /* Rodapé */
+  .footer {
+    padding: 2rem 1rem;
+    /* Mantém o padding enxuto no mobile */
+    font-size: 1rem;
+    /* Fonte um pouco menor para telas pequenas */
+  }
+
+  .footer-links a {
+    display: inline-block;
+    /* Garante que os links fiquem bem distribuídos */
+    margin: 0.5rem;
+    /* Espaçamento entre os links no mobile */
   }
 
 }
