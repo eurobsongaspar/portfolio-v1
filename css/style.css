@@ -4,8 +4,9 @@ main {
   /* Limita a largura do conteúdo pra não ficar esticado em telas muito grandes */
   margin: 0 auto;
   /* Centraliza o conteúdo na horizontal */
-  padding: 4rem 2rem;
-  /* Espaçamento interno (topo/baixo 4rem, lados 2rem) */
+  padding: 10rem 2rem 4rem 2rem;
+  /* Espaçamento interno */
+
 }
 
 /* TOPO: Logo */
@@ -22,6 +23,24 @@ header {
   /* Espaço entre logo e menu quando quebra linha */
   margin-bottom: 4rem;
   /* Espaço entre o header e a próxima seção */
+}
+
+.faixa-topo {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: #1e1e1e;
+  color:#f6f6f6;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Oculta a mensagem mais básica usada no mobile */
+.mensagem-mobile {
+  display: none;
 }
 
 .logo {
@@ -166,7 +185,7 @@ nav a:hover {
 }
 
 .social i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   /* Tamanho dos ícones */
   color: #444;
 }

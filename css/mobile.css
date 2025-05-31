@@ -25,6 +25,15 @@
     overflow: hidden;
   }
 
+  /* Oculta a mensagem completa do Desktop e exbime a mensagem mais básica para mobile*/
+.mensagem-desktop{
+  display: none;
+}
+  .mensagem-mobile{
+    display:inline;
+    font-size: 0.9rem;
+  }
+
   /* Estilo da logo: centralizada, maior e com espaçamento */
   .logo {
     font-size: 2.6rem;
